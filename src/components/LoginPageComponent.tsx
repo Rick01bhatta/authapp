@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
 import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
-
+import TestComponent from "./TestComponent";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -65,7 +65,7 @@ export default function LoginPage() {
 
   return (
     <div className="flex flex-col py-2 justify-center items-center min-h-screen border p-4 rounded-lg shadow-lg max-w-md mx-auto bg-gray-500">
-
+     <TestComponent/>
         {error && (
         <div className="mb-4 rounded bg-red-100 text-red-700 px-3 py-2 text-sm">
           {errorMessages[error] ?? error}

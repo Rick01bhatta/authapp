@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
 import {GoogleAuthProvider,signInWithPopup} from 'firebase/auth';
-import {auth} from "@/dbConfig/dbConfig"
+import {auth} from "@/dbConfig/FirebaseConfig"
 
 export default function SignPage() {
     const router = useRouter();
